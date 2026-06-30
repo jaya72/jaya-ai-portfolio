@@ -1,45 +1,41 @@
 "use client";
 
-import { motion } from "framer-motion";
-import BeginJourneyButton from "./BeginJourneyButton";
-
 export default function HeroContent() {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 60 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1 }}
-      className="text-center"
-    >
-        <br></br>
-      <p className="tracking-[0.6em] uppercase text-amber-400">
-                AI JOURNEY
-      </p>
-<br></br>
-      <h1 className="mt-6 text-5xl font-bold md:text-7xl">
-        The Journey Begins
-      </h1>
-<br></br>
-      <h2 className="mt-10 text-4xl font-semibold">
+    <div className="w-[620px] rounded-3xl border border-cyan-400/20 bg-black/40 px-14 py-12 backdrop-blur-xl shadow-2xl">
+      <h2 className="mb-8 text-4xl font-bold text-cyan-300">
         Jaya Mishra
       </h2>
-<br></br>
-<br></br>
-      <p className="mt-5 text-2xl text-cyan-400">
-        Software Engineer → AI Engineer
-      </p>
 
-      <p className="mx-auto mt-6 max-w-xl text-lg text-gray-400">
-        Building intelligent software with Artificial Intelligence,
-        Machine Learning and Generative AI.
-      </p>
-<br>
-</br>
-      <div className="mt-12">
-        <BeginJourneyButton />
+      <div className="space-y-5 text-left text-lg text-gray-300">
+
+        <p>
+          <span className="font-semibold text-cyan-400">Occupation:</span>{" "}
+          Software Engineer
+        </p>
+
+        <p>
+          <span className="font-semibold text-cyan-400">Location:</span>{" "}
+          Redmond, WA, USA
+        </p>
+
+        <p>
+          <span className="font-semibold text-cyan-400">Focus:</span>{" "}
+          AI, Machine Learning & Analytics
+        </p>
+
+        <p>
+          <span className="font-semibold text-cyan-400">Email:</span>{" "}
+          jayamishra759@gmail.com
+        </p>
+
+        <p>
+          <span className="font-semibold text-cyan-400">Resume:</span>{" "}
+          Download Resume
+        </p>
+
       </div>
-<br>
-</br>
-    </motion.div>
+
+    </div>
   );
 }
