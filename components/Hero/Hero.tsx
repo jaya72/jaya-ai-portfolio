@@ -10,7 +10,7 @@ export default function Hero() {
 
       {/* Title */}
       <h1 className="mb-16 text-center text-xl tracking-[0.6em] uppercase text-yellow-400">
-        THE JOURNEY BEGINS
+        Welcome To My Portfolio
       </h1>
 
       {/* Photo + Info */}

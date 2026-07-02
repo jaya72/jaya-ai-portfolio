@@ -1,7 +1,6 @@
 import World from "@/components/World/World";
 import Hero from "@/components/Hero/Hero";
-import ExperienceScene from "@/components/Scenes/Experience/ExperienceScene";
-import Journey from "@/components/Journey";
+import JourneyScene from "@/components/Scenes/Journey/JourneyScene";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import AIPlayground from "@/components/AIPlayground";
@@ -20,12 +19,8 @@ export default function Home() {
       {/* Scene 1 - Mission Start */}
       <Hero />
 
-
-      {/* Scene 2 - Story */}
-      <ExperienceScene />
-
       {/* Scene 3 - Journey */}
-      <Journey />
+      <JourneyScene />
 
       {/* Scene 4 - Skills Temple */}
       <Skills />
