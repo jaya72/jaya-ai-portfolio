@@ -14,18 +14,35 @@ export default function JourneyScene() {
     >
       {/* Background */}
       <Image
-        src="/world/journey/scene3-background.png"
+        src="/world/journey/scene2-cinematic-background.png"
         alt="Journey"
         fill
         priority
-        className="object-cover"
+        className="object-cover object-[center_42%] scale-[1.03]"
       />
+
+{/* Transition Gate → Journey Blend */}
+<div
+  className="
+    absolute
+    top-0
+    left-0
+    w-full
+    h-[260px]
+    bg-gradient-to-b
+    from-[#173C32]
+    via-[#245548]/60
+    to-transparent
+    z-10
+    pointer-events-none
+  "
+/>
 
       {/* Explorer */}
       <Explorer />
 
       {/* ================= SIGNPOST ================= */}
-      <div className="absolute right-[12%] top-[30%] z-30">
+      <div className="absolute right-[30%] top-[56%] z-30">
         {/* Chapter Title */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -35,18 +52,16 @@ export default function JourneyScene() {
             duration: 0.6,
             delay: 0,
           }}
-          className="absolute -top-16 left-1/2 -translate-x-1/2 text-center whitespace-nowrap"
+         className="absolute -top-6 left-[85%] -translate-x-1/2 text-center whitespace-nowrap"
         >
-              <h3
-            className="mt-10 text-2xl font-medium leading-tight text-white drop-shadow-lg"
+              <p
+            className="mt-10 text-2xl font-semibold leading-tight text-[#F4E8C1] drop-shadow-[0_2px_4px_rgba(0,0,0,0.95)]"
             style={{
               textShadow: "2px 2px 10px rgba(0,0,0,.8)",
             }}
           >
-            The First
-            <br />
-            Footsteps
-          </h3>
+            The First Footsteps
+          </p>
         </motion.div>
 
         {/* Signpost */}
@@ -54,7 +69,7 @@ export default function JourneyScene() {
           src="/world/journey/signpost.png"
           alt="Signpost"
           width={180}
-          height={280}
+          height={180}
           priority
         />
       </div>

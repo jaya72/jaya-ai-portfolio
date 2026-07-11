@@ -1,41 +1,65 @@
 "use client";
 
+import { motion } from "framer-motion";
+
 export default function HeroContent() {
   return (
-    <div className="w-[620px] rounded-3xl border border-cyan-400/20 bg-black/40 px-14 py-12 backdrop-blur-xl shadow-2xl">
-      <h2 className="mb-8 text-4xl font-bold text-cyan-300">
-        Jaya Mishra
-      </h2>
+    <motion.div
+      initial={{ opacity: 0, x: 60 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 1 }}
+      className="max-w-2xl"
+    >
+      {/* Name */}
+      <h1 className="text-6xl font-bold leading-tight text-white">
+        Jaya
+        <br />
+        Mishra
+      </h1>
 
-      <div className="space-y-5 text-left text-lg text-gray-300">
+      {/* Role */}
+      <p className="mt-4 text-xl uppercase tracking-[0.45em] text-cyan-300">
+        AI Engineer
+      </p>
 
-        <p>
-          <span className="font-semibold text-cyan-400">Occupation:</span>{" "}
-          Software Engineer
-        </p>
+      {/* Divider */}
+      <div className="mt-8 h-[2px] w-28 rounded-full bg-cyan-400" />
 
-        <p>
-          <span className="font-semibold text-cyan-400">Location:</span>{" "}
-          Redmond, WA, USA
-        </p>
+      {/* Intro */}
+      <p className="mt-8 text-xl leading-10 text-gray-300">
+        Building intelligent systems that transform
+        data into meaningful insights.
+      </p>
 
-        <p>
-          <span className="font-semibold text-cyan-400">Focus:</span>{" "}
-          AI, Machine Learning & Analytics
-        </p>
+      <p className="mt-6 text-lg leading-9 text-gray-400">
+        Software Engineer with 5 years of experience,
+        now crafting AI-powered solutions through
+        Machine Learning, Data Analytics and Generative AI.<br></br>
+      </p>
+      
 
-        <p>
-          <span className="font-semibold text-cyan-400">Email:</span>{" "}
-          jayamishra759@gmail.com
-        </p>
+      {/* Buttons */}
+      <div className="mt-12 flex gap-6">
 
-        <p>
-          <span className="font-semibold text-cyan-400">Resume:</span>{" "}
+        <a
+          href="/resume.pdf"
+          className="
+            rounded-full
+            bg-cyan-400
+            px-8
+            py-4
+            font-semibold
+            text-black
+            transition
+            hover:scale-105
+          "
+        >
           Download Resume
-        </p>
+        </a>
+
 
       </div>
 
-    </div>
+    </motion.div>
   );
 }

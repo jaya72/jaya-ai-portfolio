@@ -20,51 +20,36 @@ export default function OriginDialogue() {
         delay: 2.8,
         duration: 0.8,
       }}
-      className="absolute left-[30%] top-[28%] z-40"
+      className="absolute left-[26%] top-[18%] z-40"
     >
-      <div
-        className="
-          w-[430px]
-          rounded-3xl
-          border
-          border-cyan-400/20
-          bg-black/35
-          backdrop-blur-xl
-          shadow-2xl
-          p-8
-        "
-      >
+      <div className="w-[430px] rounded-3xl bg-transparent p-8">
 
         {/* Divider */}
-        <div className="my-5 h-px bg-cyan-400/20" />
+        <div className="my-5 h-px bg-[#F4E8C1]/30" />
 
         {/* Content */}
-        {/* Content */}
-<div className="px-8 py-2">
+        <div className="px-8 py-2">
+          <div className="space-y-4 text-[17px] leading-8 font-semibold text-[#F4E8C1] drop-shadow-[0_2px_4px_rgba(0,0,0,0.95)]">
 
-<div className="space-y-4 text-[16px] leading-7 text-white-300">
+            <p>📍 Born & Brought Up in India</p>
 
-  <p>
-    📍 Born & Brought Up in India
-  </p>
+            <p>
+              📚 Completed my schooling in <strong>2013</strong>
+            </p>
 
-  <p>
-    📚 Completed my schooling in <strong>2013</strong>.
-  </p>
+            <p>
+              🎓 Graduated from Mumbai University in{" "}
+              <strong>2018</strong>
+            </p>
 
-  <p>
-    🎓 Graduated from Mumbai University in <strong>2018</strong>.
-  </p>
+            <p className="italic font-semibold text-[#E8D7A7]">
+              Those early experiences sparked my curiosity
+              for technology and eventually led me toward AI
+            </p>
 
-  <p className="italic text-white-200">
-    Those early experiences sparked my curiosity
-    for technology and eventually led me toward
-    Artificial Intelligence.
-  </p>
+          </div>
+        </div>
 
-</div>
-
-</div>
       </div>
     </motion.div>
   );

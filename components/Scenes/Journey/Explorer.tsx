@@ -9,71 +9,77 @@ export default function Explorer() {
       className="absolute z-40"
 
       initial={{
-        left: "47%",
-        top: "92%",
+        left: "66%",
+        top: "22%",
       }}
 
       animate={{
         left: [
-          "47%",
-          "49%",
-          "52%",
-          "56%",
-          "60%",
-          "64%"
-        ],
-
-        top: [
-          "92%",
-          "84%",
-          "75%",
           "66%",
+          "63%",
+          "60%",
+          "57%",
+          "55%",
+          "54%",
+          "53%",
+          "52%"
+        ],
+      
+        top: [
+          "22%",
+          "30%",
+          "38%",
+          "46%",
+          "53%",
           "58%",
-          "50%"
+          "61%",
+          "64%"
         ]
       }}
-
       transition={{
-        duration: 7,
+        duration: 8.5,
         ease: "easeInOut",
       }}
     >
       {/* Shadow */}
       <motion.div
         animate={{
-          scale: [1, 0.9, 1],
-          opacity: [0.45, 0.3, 0.45],
+          scale: [1, 0.82, 1],
+          opacity: [0.45, 0.22, 0.45],
         }}
         transition={{
           repeat: Infinity,
-          duration: 0.35,
+          duration: 0.4,
         }}
         className="absolute left-1/2 top-[44px] -translate-x-1/2"
       >
         <Image
           src="/world/journey/shadow.png"
           alt=""
-          width={40}
+          width={42}
           height={14}
         />
       </motion.div>
 
-      {/* Walking */}
+      {/* Walking Animation */}
       <motion.div
-        animate={{
-          y: [0, -2, 0],
-          rotate: [-2, 2, -2],
-        }}
-        transition={{
-          repeat: Infinity,
-          duration: 0.35,
-        }}
-      >
+  animate={{
+    y: [0, -5, 0, -5, 0],
+    x: [0, 2, 0, -2, 0],
+    rotate: [-2, 2, -2, 2, -2],
+    scale: [1, 0.985, 1, 0.985, 1],
+  }}
+  transition={{
+    repeat: Infinity,
+    duration: 0.45,
+    ease: "easeInOut",
+  }}
+>
         <Image
-          src="/world/journey/avatar-back.png"
+          src="/world/journey/avatar.png"
           alt="Explorer"
-          width={94}
-          height={94}
+          width={125}
+          height={125}
           priority
           draggable={false}
         />

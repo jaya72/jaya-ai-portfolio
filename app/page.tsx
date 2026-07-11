@@ -6,6 +6,7 @@ import Projects from "@/components/Projects";
 import AIPlayground from "@/components/AIPlayground";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import ChapterGate from "@/components/Scenes/Transition/ChapterGate";
 
 // import Navbar from "@/components/Navbar";
 
@@ -18,6 +19,8 @@ export default function Home() {
 
       {/* Scene 1 - Mission Start */}
       <Hero />
+     
+      <ChapterGate />
 
       {/* Scene 3 - Journey */}
       <JourneyScene />
