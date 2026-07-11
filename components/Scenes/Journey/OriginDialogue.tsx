@@ -44,7 +44,7 @@ export default function OriginDialogue() {
 
             <p className="italic font-semibold text-[#E8D7A7]">
               Those early experiences sparked my curiosity
-              for technology and eventually led me toward AI
+              for technology, Database and Machine Learning Concepts
             </p>
 
           </div>
