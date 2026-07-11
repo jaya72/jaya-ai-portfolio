@@ -31,12 +31,12 @@ export default function OriginDialogue() {
         <div className="px-8 py-2">
           <div className="space-y-4 text-[17px] leading-8 font-semibold text-[#F4E8C1] drop-shadow-[0_2px_4px_rgba(0,0,0,0.95)]">
 
-            <p>📍 Born & Brought Up in India</p>
+            <p>📍 Born in Mumbai, India & Brought Up in Uttar Pradesh (IN)</p>
 
             <p>
-              📚 Completed my schooling in <strong>2013</strong>
+              📚 Completed my schooling in <strong>2013</strong> in UP from CBSE Board Of Schooling, IN
             </p>
-
+            <p>Travelled to Mumbai for doing Bachelors Of Engineering [B.E.] in <strong>2014</strong></p>
             <p>
               🎓 Graduated from Mumbai University in{" "}
               <strong>2018</strong>
