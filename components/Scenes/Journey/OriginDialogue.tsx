@@ -42,7 +42,7 @@ export default function OriginDialogue() {
               <strong>2018</strong>
             </p>
 
-            <p className="italic font-semibold text-[#E8D7A7]">
+            <p className="font-semibold text-[#E8D7A7]">
               Those early experiences sparked my curiosity
               for technology, Database and Machine Learning Concepts
             </p>
