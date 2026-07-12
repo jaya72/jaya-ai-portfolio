@@ -36,16 +36,11 @@ export default function OriginDialogue() {
             <p>
               📚 Completed my schooling in <strong>2013</strong> in UP from CBSE Board Of Schooling, IN
             </p>
-            <p>Travelled to Mumbai for doing Bachelors Of Engineering [B.E.] in <strong>2014</strong></p>
+            <p>🌱 My journey began with curiosity — a fascination for technology and how ideas could become real solutions.</p>
             <p>
-              🎓 Graduated from Mumbai University in{" "}
-              <strong>2018</strong>
+            ✨ I didn't know where the path would lead yet. I only knew I wanted to keep exploring.
             </p>
 
-            <p className="font-semibold text-[#E8D7A7]">
-              Those early experiences sparked my curiosity
-              for technology, Database and Machine Learning Concepts
-            </p>
 
           </div>
         </div>
